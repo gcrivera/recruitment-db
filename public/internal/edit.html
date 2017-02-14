@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>.406 Recruitment - Edit</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js" ></script>
+</head>
+<body class="html-body page">
+  <form id="edit-form">
+    <p>
+      First Name:  <input type="text" name="firstName" id="first-name" class="short-ans-box">
+      Last Name:  <input type="text" name="lastName" id="last-name" class="short-ans-box">
+      LinkedIn: <input type="text" name="linkedin" id="linkedin" class="short-ans-box"><br>
+    </p>
+    <p>
+      Vertical:<br>
+      <input list="verticals" id="vertical-list" class="short-ans-box"><br>
+    </p>
+    <p id="location">
+      Location:<br>
+      <input list="locations" id="location-list" class="short-ans-box">
+    </p>
+    <p id="business-unit">
+      Business Unit:<br>
+      <input list="business-units" id="business-unit-list" class="short-ans-box">
+    </p>
+    <p id="position">
+      Position:<br>
+      <input list="positions" id="position-list" class="short-ans-box">
+    </p>
+    <p>
+    Rating: <select name="rating" id="rating-sel"></select>
+    </p>
+    <p id="met-with">
+      Met with:<br>
+      <input list="met-withs" id="met-with-list" class="short-ans-box">
+    </p>
+    <p>
+      Company Intros:<br>
+      <input list="companies" id="company-list" class="short-ans-box"><br>
+    </p>
+    <p>
+    Date Met:<br><input name="date" type="date" id="date">
+    </p>
+    <p>
+      Current Resume: <button id="current-resume-btn">View</button>
+    </p>
+    <p>
+      Select New Resume (Optional): <input type="file" name="resume" id="resume">
+    </p>
+    Looking for work?:
+    <input type="radio" name="employed" value="true" class="employed-radio" id="employed-radio-yes">Yes
+    <input type="radio" name="employed" value="false" class="employed-radio" id="employed-radio-no">No
+    <br>
+    <br>
+    <input type="button" value="Submit" id="submit-btn" class="button submit-btn">
+    <input type="reset" id="reset-btn" class="button">
+  </form><br>
+  <script src="edit.js"></script>
+  <script src="../utils/utils.js"></script>
+  <script src="../utils/config.js"></script>
+  <script src="../utils/cookie.js"></script>
+</body>
+</html>

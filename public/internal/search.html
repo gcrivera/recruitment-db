@@ -1,0 +1,56 @@
+<html>
+<head>
+    <title>.406 Recruitment - Search</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href= "https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css" href= "https://cdn.datatables.net/buttons/1.2.4/css/buttons.dataTables.min.css"/>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js" ></script>
+    <script src='https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js'></script>
+    <script src='https://cdn.datatables.net/buttons/1.2.4/js/dataTables.buttons.min.js'></script>
+    <script src='https://cdn.datatables.net/buttons/1.2.4/js/buttons.flash.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js'></script>
+    <script src='http://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js'></script>
+    <script src='http://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js'></script>
+    <script src='http://cdn.datatables.net/buttons/1.2.4/js/buttons.html5.min.js'></script>
+    <script src='http://cdn.datatables.net/buttons/1.2.4/js/buttons.print.min.js'></script>
+</head>
+<body class="html-body page">
+  <form id="search-form">
+    <input class="short-ans-box" type="text" name="firstName" placeholder="First Name">
+    <input class="short-ans-box" type="text" name="lastName" placeholder="Last Name"><br><br>
+    <input class="short-ans-box" list="verticals" id="vertical-list" placeholder="Vertical">
+    <p id="location">
+      <input class="short-ans-box" list="locations" id="location-list" placeholder="Location">
+    </p>
+    <p id="business-unit">
+      <input class="short-ans-box" list="business-units" id="business-unit-list" placeholder="Business Unit">
+    </p>
+    <p id="position">
+      <input class="short-ans-box" list="positions" id="position-list" placeholder="Position">
+    </p>
+    <p id="met-with">
+      <input class="short-ans-box" list="met-withs" id="met-with-list" placeholder="Met With">
+    </p>
+    <p id="company">
+      <input class="short-ans-box" list="companies" id="company-list" placeholder="Company Intros">
+    </p>
+    <input class="short-ans-box" name="dateCreated" type="text" placeholder="Date of Creation" onfocus="(this.type='date')" onblur="(this.type='text')">
+    <input type="radio" name="createdFilter" value="before">Before
+    <input type="radio" name="createdFilter" value="on" checked>On
+    <input type="radio" name="createdFilter" value="after">After
+    <br>
+    <br>
+    Looking for work?:
+    <input type="radio" name="employed" value="true">Yes
+    <input type="radio" name="employed" value="false">No
+    <br>
+    <br>
+    <input class="button submit-btn" type="button" value="Search" id="search-btn">
+    <input class="button" type="reset" id="reset-btn">
+  </form>
+  <script src="search.js"></script>
+  <script src="../utils/utils.js"></script>
+  <script src="../utils/config.js"></script>
+  <script src="../utils/cookie.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>.406 Recruitment - Search</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href= "https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css" href= "https://cdn.datatables.net/buttons/1.2.4/css/buttons.dataTables.min.css"/>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js" ></script>
+    <script src='https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js'></script>
+    <script src='https://cdn.datatables.net/buttons/1.2.4/js/dataTables.buttons.min.js'></script>
+    <script src='https://cdn.datatables.net/buttons/1.2.4/js/buttons.flash.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js'></script>
+    <script src='http://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js'></script>
+    <script src='http://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js'></script>
+    <script src='http://cdn.datatables.net/buttons/1.2.4/js/buttons.html5.min.js'></script>
+    <script src='http://cdn.datatables.net/buttons/1.2.4/js/buttons.print.min.js'></script>
+</head>
+<body class="html-body page">
+  <form id="linkedin-search-form">
+    <input class="short-ans-box" type="text" name="firstName" placeholder="First Name"><br>
+    <input class="short-ans-box" type="text" name="lastName" placeholder="Last Name"><br>
+    <input class="short-ans-box" type="text" name="company" placeholder="Company"><br>
+    <input class="short-ans-box" type="text" name="position" placeholder="Position"><br>
+    <p id="connection">
+      Connection:<br><br>
+      <input type="radio" name="connection-sel" id="connection-sel-on" checked>Select All
+      <input type="radio" name="connection-sel" id="connection-sel-off">Select None<br>
+    </p>
+    <input class="button submit-btn" type="button" value="Search" id="linkedin-search-btn">
+    <input class="button" type="reset" id="reset-btn">
+  </form>
+  <button class="button" id="bulk-del-btn">Delete DB</button>
+  <script src="search.js"></script>
+  <script src="../utils/utils.js"></script>
+  <script src="../utils/config.js"></script>
+  <script src="../utils/cookie.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+.page {
+  background-color: #F2F2F2;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.page-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 200%;
+  margin-left: 10px;
+}
+
+.navbar {
+  height: 50px;
+  margin-bottom: 15px;
+  background-color: #B6B6B6;
+}
+
+.short-ans-box {
+  border-color: #8f8f8f;
+  border-width: thin;
+  border-radius: 6px;
+  padding: 5px;
+  margin: 3px;
+  margin-left: 0px;
+}
+
+.list {
+  margin-left: 0px;
+}
+
+.button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+  border: none;
+  border-radius: 6px;
+  background-color: #1D435D;
+  color: white;
+  height: 25px;
+  margin: 3px;
+  margin-left: 10px;
+}
+
+.navbar-btn {
+  margin-top: 10px;
+}
+
+.filter {
+  display: inline-block;
+  background-color: #B3B3B3;
+  margin: 3px;
+  padding: 3px;
+  border-radius: 6px;
+}
+
+.delete-btn {
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  color: #8f8f8f;
+  font-weight: bold;
+  margin-left: 3px;
+}
+
+.submit-btn {
+  margin-left: 0px;
+}
+
+.buttons-html5 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+}
+
+#sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logout-btn {
+  float: right;
+  margin-right: 10px;
+}
+
+#bulk-del-btn {
+  margin-left: 15px;
+  margin-top: 100px;
+}
+
+#password {
+  height: 40px;
+  font-size: 14;
+}
+
+#res-table_filter {
+  margin-top: 32px;
+  margin-left: 50px;
+  float: left;
+}
+
+#linkedin-table_filter {
+  margin-top: 32px;
+  margin-left: 50px;
+  float: left;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+tr:nth-child(even){background-color: #B6B6B6}
+
+form {
+  margin-left: 15px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+}
